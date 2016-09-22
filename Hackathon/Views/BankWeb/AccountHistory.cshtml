@@ -1,0 +1,66 @@
+﻿@model IEnumerable<Hackathon.Repository.Models.BankWeb.Transaction>
+
+@{
+    ViewBag.Title = "AccountHistory";
+}
+
+<h1>Bank Web</h1>
+<p>
+    <a href="~/BankWeb/Personal" class="btn btn-default">Personal information</a>
+    <a href="~/BankWeb/Logout" class="btn btn-default">Logout</a>
+</p>
+
+<h2>Your account history</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NrbFrom)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NrbTo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Amount)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NrbFrom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NrbTo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            @{
+                var color = "";
+                if (item.TransferType == Hackathon.Repository.Models.BankWeb.TransferType.Incoming)
+                {
+                    color = "green";
+                }
+                else
+                {
+                    color = "red";
+                }
+            }
+            <td style="color: @color">
+                @Html.DisplayFor(modelItem => item.Amount)
+            </td>
+        </tr>
+                }
+
+</table>

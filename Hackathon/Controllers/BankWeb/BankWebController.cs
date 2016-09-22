@@ -37,8 +37,6 @@ namespace Hackathon.Controllers
                 return RedirectToAction("Login");
             }
 
-            BankWebRepository.Instance.LoggedUser = user;
-
             if (base.Request.QueryString.AllKeys.Contains("ssourl"))
             {
                 string url = base.Request.QueryString["ssourl"];
@@ -58,6 +56,23 @@ namespace Hackathon.Controllers
             }
 
             return View();
+        }
+
+
+        public ActionResult AccountHistory(string id)
+        {
+            var history = BankWebRepository.Instance.LoggedUser.Accounts
+                .Where(w => w.Nrb == id)
+                .FirstOrDefault()
+                ?.History;
+            return View(history);
+        }
+
+
+        public ActionResult Personal()
+        {
+            var user = BankWebRepository.Instance.LoggedUser;
+            return View(user);
         }
     }
 }

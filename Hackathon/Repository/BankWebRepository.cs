@@ -16,6 +16,7 @@ namespace Hackathon.Repository
         {
             get
             {
+                _instance.Login("slawomir.brys", "password");
                 return _instance;
             }
         }
@@ -41,7 +42,7 @@ namespace Hackathon.Repository
                     new Account()
                     {
                         Nrb = "PL371140926376031880416168827314",
-                        Name = "My current account",
+                        Name = "Current account",
                         Balance = 1500,
                         History = new List<Transaction>()
                         {
@@ -71,13 +72,22 @@ namespace Hackathon.Repository
                                 Title = "Online shop payment",
                                 TransferType = TransferType.Outgoing,
                                 Amount = 750
+                            },
+                            new Transaction()
+                            {
+                                NrbFrom = "PL681140192224161184691122740935",
+                                NrbTo = "PL371140926376031880416168827314",
+                                Date = "2016-09-10",
+                                Title = "Return for a dinner",
+                                TransferType = TransferType.Incoming,
+                                Amount = 178.13m
                             }
                         }
                     },
                     new Account()
                     {
                         Nrb = "PL251140746167296292301159271465",
-                        Name = "My salary account",
+                        Name = "Salary account",
                         Balance = 21.21m,
                         History = new List<Transaction>()
                         {
@@ -95,7 +105,7 @@ namespace Hackathon.Repository
                     new Account()
                     {
                         Nrb = "PL721140014333465284278667875408",
-                        Name = "My saving account",
+                        Name = "Saving account",
                         Balance = 50000,
                         History = new List<Transaction>()
                     }
@@ -130,7 +140,9 @@ namespace Hackathon.Repository
 
         public User Login(string login, string password)
         {
-            return _users.FirstOrDefault(_ => _.Login == login && _.Password == password);
+            var user = _users.FirstOrDefault(_ => _.Login == login && _.Password == password);
+            _instance.LoggedUser = user;
+            return user;
         }
 
         public void Logout()
