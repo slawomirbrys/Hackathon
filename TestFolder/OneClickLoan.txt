@@ -1,0 +1,45 @@
+- Kto za to zap³aci?
+- Usun¹æ szczegó³y odnoœnie rachunków klienta.
+- Monetyzacja.
+
+
+Napisaæ w punktach co nale¿y powiedzieæ:
+15-20 punktów.
+
+One click loan :D
+
+1. I would like to buy the product.
+(open shop page)
+2. I would like to have one login to all shops.
+(log in page)
+3. I have a login. Its login to my bank.
+(log in as bank)
+4. I would like to use it. It only login i need to remember.
+(bank login)
+5. I would like to log in to my shop. By my bank login.
+(redirect ot shop)
+6. Now i can choose some things
+(add some products to the basket)
+7. Lets buy it.
+(go to basket page)
+8. Oh. I don't have enought money for this.
+()
+9. But i see some loans offer.
+(chose loan amount amount and period)
+10. Just choose one and buy it.
+(buy products -> loan offer agreement)
+
+Benefits for user:
+-> Only one login for any shop
+-> No additional forms to fill in.
+-> Extremally simple.
+
+Benefits for bank:
+-> Selling loans just by click.
+-> Low level of risk. (calculated based on account history)
+->
+
+Benefits for shop:
+-> 
+
+Bank rekomenduje pewne sklepy. 
