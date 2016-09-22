@@ -89,7 +89,20 @@
                 </tr>
             </tbody>
         </table>
+
+
+        <md-slider-container>
+            <span>Amount</span>
+            <md-slider flex min="0" max="255" ng-model="color.red" aria-label="red" id="red-slider">
+            </md-slider>
+            <md-input-container>
+                <input flex type="number" ng-model="color.red" aria-label="red" aria-controls="red-slider">
+            </md-input-container>
+        </md-slider-container>
+
     </div>
+
+
    
     <script type="text/javascript">
             $('[data-toggle="tooltip"]').tooltip();

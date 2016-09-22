@@ -3,6 +3,18 @@ app.controller('productsController', ['$scope', '$location', 'productService', '
 
     $scope.products = [];
 
+    $scope.minSlider = {
+        value: 10
+    };
+
+    //Slider with selection bar
+    $scope.slider_visible_bar = {
+        value: 10,
+        options: {
+            showSelectionBar: true
+        }
+    };
+
     productService.getProducts().then(function (results) {
         $scope.products = results.data;
     }, function (error) {

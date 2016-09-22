@@ -1,5 +1,5 @@
 ﻿
-var app = angular.module('SimpleStackApp', ['ngRoute', 'LocalStorageModule', 'angular-loading-bar']);
+var app = angular.module('SimpleStackApp', ['ngRoute', 'LocalStorageModule', 'ngMaterial']);
 
 app.config(function ($routeProvider) {
 
