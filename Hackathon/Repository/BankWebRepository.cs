@@ -16,7 +16,6 @@ namespace Hackathon.Repository
         {
             get
             {
-                _instance.Login("slawomir.brys", "password");
                 return _instance;
             }
         }
