@@ -13,5 +13,11 @@ namespace Hackathon.Controllers
         {
             return View();
         }
+
+
+        public ActionResult AuthCompleted()
+        {
+            return base.Redirect("~/Shop?logged");
+        }
     }
 }

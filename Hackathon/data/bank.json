@@ -2,7 +2,7 @@
   {
     "BankId": 1,
     "BankName": "mBank",
-    "AuthUrl" :  "/BankWeb/Login?ssourl=/Figo"
+    "AuthUrl" :  "/BankWeb/Login?ssourl=/Figo/AuthCompleted"
   },
   {
     "BankId": 2,

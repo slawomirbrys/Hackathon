@@ -1,34 +1,41 @@
 ﻿
 @{
     ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_LayoutEmpty.cshtml";
 }
+<br/><br /><br /><br />
 
-<h1>Bank Web</h1>
-<h2>Login to the transactional system.</h2>
-
-@using (Html.BeginForm())
-{
-
-    <div class="form-horizontal">
-        <div class="form-group">
-            <label for="login" class="control-label col-md-2">Login:</label>
-            <div class="col-md-10">
-                <input name="login" class="form-control" />
-            </div>
-        </div>
-
-        <div class="form-group">
-            <label for="password" class="control-label col-md-2">Password:</label>
-            <div class="col-md-10">
-                <input type="password" name="password" />
-            </div>
-        </div>
-
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Login" class="btn btn-success" />
-                @Html.ActionLink("Cancel", "Index", null, new { @class = "btn btn-danger" })
-            </div>
-        </div>
+<div class="row">
+    <div class="col-md-12" style="text-align:center">
+        <h1>Bank Online Transactional System.</h1>
     </div>
-}
+
+    <br/>
+
+    @using (Html.BeginForm())
+    {
+
+        <div class="form-horizontal">
+            <div class="form-group">
+                <label for="login" class="control-label col-md-5">Login:</label>
+                <div class="col-md-7">
+                    <input name="login" class="form-control" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="password" class="control-label col-md-5">Password:</label>
+                <div class="col-md-7">
+                    <input type="password" name="password" class="form-control"/>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-5 col-md-7">
+                    <input type="submit" value="Login" class="btn btn-success" />
+                    @Html.ActionLink("Cancel", "Index", null, new { @class = "btn btn-danger" })
+                </div>
+            </div>
+        </div>
+    }
+</div>
