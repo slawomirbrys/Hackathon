@@ -32,5 +32,16 @@ namespace Hackathon.Repository
                 new LoanOffer() {BankId = 4, Currency = "EUR", CreditAmout = 1200, InterestRate = 5, PeriodFrom = DateTime.Now, PeriodTo = DateTime.Now.AddDays(365)},
             };
         }
+
+        IEnumerable<LoanOffer> GetFinancialOffers(BankToken bankToken, ShopProduct product)
+        {
+            return new List<LoanOffer>()
+            {
+                new LoanOffer() {BankId = 1, Currency = "EUR", CreditAmout = 1200, InterestRate = 2, PeriodFrom = DateTime.Now, PeriodTo = DateTime.Now.AddDays(365)},
+                new LoanOffer() {BankId = 2, Currency = "EUR", CreditAmout = 1200, InterestRate = 3, PeriodFrom = DateTime.Now, PeriodTo = DateTime.Now.AddDays(365)},
+                new LoanOffer() {BankId = 3, Currency = "EUR", CreditAmout = 1200, InterestRate = 1, PeriodFrom = DateTime.Now, PeriodTo = DateTime.Now.AddDays(365)},
+                new LoanOffer() {BankId = 4, Currency = "EUR", CreditAmout = 1200, InterestRate = 5, PeriodFrom = DateTime.Now, PeriodTo = DateTime.Now.AddDays(365)},
+            };
+        }
     }
 }

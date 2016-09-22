@@ -156,6 +156,7 @@
     <Compile Include="Repository\Models\Figo\BankToken.cs" />
     <Compile Include="Repository\FigoRepository.cs" />
     <Compile Include="Repository\Models\FinancialProducts\LoanOffer.cs" />
+    <Compile Include="Repository\Models\FinancialProducts\ProductType.cs" />
     <Compile Include="Repository\Models\FinancialProducts\ShopProduct.cs" />
     <Compile Include="Repository\ShopRepository.cs" />
     <Compile Include="Startup.cs" />
