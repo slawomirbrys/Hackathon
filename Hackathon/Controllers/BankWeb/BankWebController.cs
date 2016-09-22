@@ -39,7 +39,7 @@ namespace Hackathon.Controllers
 
             if (base.Request.QueryString.AllKeys.Contains("ssourl"))
             {
-                if (user.IsFigoAllowed)
+                if (!user.IsFigoAllowed)
                 {
                     return RedirectToAction("Login");
                 }
