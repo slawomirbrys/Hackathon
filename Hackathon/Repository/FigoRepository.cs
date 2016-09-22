@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Hackathon.Repository.FigoModels;
+using Hackathon.Repository.Models.Figo;
 
 namespace Hackathon.Repository
 {
@@ -18,5 +19,8 @@ namespace Hackathon.Repository
                 new BankModel()
             };
         }
+
+
+
     }
 }
