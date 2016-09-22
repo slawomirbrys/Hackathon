@@ -1,5 +1,5 @@
 ﻿'use strict';
-app.controller('productsController', ['$scope', 'productService', 'authService', function ($scope, productService, authService) {
+app.controller('productsController', ['$scope', '$location', 'productService', 'authService', function ($scope, $location, productService, authService) {
 
     $scope.products = [];
 
@@ -8,5 +8,9 @@ app.controller('productsController', ['$scope', 'productService', 'authService',
     }, function (error) {
         console.log(error.data.message);
     });
+
+    $scope.buyStock = function (index) {
+        $location.path('/shoppingCart');
+    };
 
 }]);

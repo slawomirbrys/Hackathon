@@ -43,6 +43,12 @@ app.config(function ($routeProvider) {
         templateUrl: "/app/views/banks.html"
     });
 
+    $routeProvider.when("/shoppingCart", {
+        controller: "productsController",
+        templateUrl: "/app/views/shoppingCart.html"
+    });
+    
+
     $routeProvider.otherwise({ redirectTo: "/products" });
 
 });
