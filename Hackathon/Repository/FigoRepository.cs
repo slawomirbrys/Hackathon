@@ -65,7 +65,7 @@ namespace Hackathon.Repository
                 return accounts.ToList().Exists(i => i.Balance.Balance >= (double) product.TotalValue);
             }
 
-            return true;
+            return false;
         }
     }
 }
