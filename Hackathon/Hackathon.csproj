@@ -175,6 +175,7 @@
     <Content Include="Content\css\loading-bar.min.css" />
     <Content Include="Content\css\site.css" />
     <Content Include="Content\css\social-buttons.css" />
+    <Content Include="Content\mbank-logo.png" />
     <Content Include="data\images\banks\1.jpg" />
     <Content Include="data\images\banks\10.jpg" />
     <Content Include="data\images\banks\11.jpg" />
