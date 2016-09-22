@@ -1,7 +1,9 @@
-﻿namespace Hackathon.Repository.Models.Figo
+﻿using System;
+
+namespace Hackathon.Repository.Models.Figo
 {
     public class BankToken
     {
-        public int UserId { get; set; }
+        public Guid Token { get; set; }
     }
 }

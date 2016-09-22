@@ -24,6 +24,11 @@ namespace Hackathon.Controllers.Figo
             return FigoRepository.GetFinancialOffers(bankToken, shopProducts);
         }
 
+        public IEnumerable<LoanOffer> GetFinancialOffers(BankToken bankToken, ShopProduct shopProduct)
+        {
+            return FigoRepository.GetFinancialOffers(bankToken, shopProduct);
+        }
+
         //// POST api/values
         //public void Post([FromBody]string value)
         //{
