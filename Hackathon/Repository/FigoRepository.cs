@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using Hackathon.Repository.FigoModels;
 using Hackathon.Repository.FinancialProductsModels;
 using Hackathon.Repository.Models.Figo;
@@ -15,10 +13,21 @@ namespace Hackathon.Repository
         {
             return new List<BankModel>()
             {
-                new BankModel() {BankId = 1, BankName = "mBank S.A."},
-                new BankModel() {BankId = 2, BankName = "Commerzbank"},
-                new BankModel() {BankId = 4, BankName = "PKO BP S.A"},
-                new BankModel() {BankId = 3, BankName = "Deutsche Bank"},
+                new BankModel() {BankId = 1, BankName = "mBank S.A.", AuthUrl = "/BankWeb/Login?ssourl={url}"},
+                new BankModel() {BankId = 2, BankName = "Commerzbank", AuthUrl = "/BankWeb/Login?ssourl={url}"},
+                new BankModel() {BankId = 4, BankName = "Deutsche Bank", AuthUrl = "/BankWeb/Login?ssourl={url}"},
+                new BankModel() {BankId = 5, BankName = "Eurobank", AuthUrl = "/BankWeb/Login?ssourl={url}"},
+                new BankModel() {BankId = 6, BankName = "Noble Bank", AuthUrl = "/BankWeb/Login?ssourl={url}"},
+                new BankModel() {BankId = 7, BankName = "Idea", AuthUrl = "/BankWeb/Login?ssourl={url}"},
+                new BankModel() {BankId = 8, BankName = "BGZ BNP", AuthUrl = "/BankWeb/Login?ssourl={url}"},
+                new BankModel() {BankId = 9, BankName = "PKO BP S.A", AuthUrl = "/BankWeb/Login?ssourl={url}"},
+                new BankModel() {BankId = 10, BankName = "Millenium", AuthUrl = "/BankWeb/Login?ssourl={url}"},
+                new BankModel() {BankId = 11, BankName = "ING", AuthUrl = "/BankWeb/Login?ssourl={url}"},
+                new BankModel() {BankId = 12, BankName = "Bank BPH", AuthUrl = "/BankWeb/Login?ssourl={url}"},
+                new BankModel() {BankId = 14, BankName = "Citi ", AuthUrl = "/BankWeb/Login?ssourl={url}"},
+                new BankModel() {BankId = 15, BankName = "BOS Bank", AuthUrl = "/BankWeb/Login?ssourl={url}"},
+                new BankModel() {BankId = 16, BankName = "GET IN BANK", AuthUrl = "/BankWeb/Login?ssourl={url}"},
+                new BankModel() {BankId = 18, BankName = "ALIOR", AuthUrl = "/BankWeb/Login?ssourl={url}"},
             };
         }
 

@@ -10,6 +10,7 @@ namespace Hackathon.Repository.FigoModels
         public string BankName { get; set; }
         public int BankId { get; set; }
         //TG - ToDo!
-        public string Token { get; set; } 
+        public string Token { get; set; }
+        public string AuthUrl { get; set; }
     }
 }
