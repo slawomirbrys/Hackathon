@@ -13,5 +13,18 @@ namespace Hackathon.Controllers
         {
             return View();
         }
+
+
+        public ActionResult Login()
+        {
+            return View();
+        }
+
+
+        [HttpPost]
+        public ActionResult Login(string login, string password)
+        {
+            return View();
+        }
     }
 }
