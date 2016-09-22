@@ -43,7 +43,7 @@ app.config(function ($routeProvider) {
         templateUrl: "/app/views/banks.html"
     });
 
-    $routeProvider.otherwise({ redirectTo: "/home" });
+    $routeProvider.otherwise({ redirectTo: "/products" });
 
 });
 
