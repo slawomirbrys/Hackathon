@@ -262,6 +262,7 @@
     <Content Include="Views\BankWeb\Accounts.cshtml" />
     <Content Include="Views\BankWeb\AccountHistory.cshtml" />
     <Content Include="Views\BankWeb\Personal.cshtml" />
+    <Content Include="Views\Shared\_LayoutEmpty.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
