@@ -11,7 +11,7 @@ namespace Hackathon.Repository
 {
     public class FigoRepository
     {
-        IEnumerable<BankModel> GetAvailableBanks(BankToken bankToken)
+        public static IEnumerable<BankModel> GetAvailableBanks(BankToken bankToken)
         {
             return new List<BankModel>()
             {
@@ -22,7 +22,7 @@ namespace Hackathon.Repository
             };
         }
 
-        IEnumerable<LoanOffer> GetFinancialOffers(BankToken bankToken, IEnumerable<ShopProduct> products)
+        public static IEnumerable<LoanOffer> GetFinancialOffers(BankToken bankToken, IEnumerable<ShopProduct> products)
         {
             return new List<LoanOffer>()
             {
@@ -33,7 +33,7 @@ namespace Hackathon.Repository
             };
         }
 
-        IEnumerable<LoanOffer> GetFinancialOffers(BankToken bankToken, ShopProduct product)
+        public static IEnumerable<LoanOffer> GetFinancialOffers(BankToken bankToken, ShopProduct product)
         {
             return new List<LoanOffer>()
             {
