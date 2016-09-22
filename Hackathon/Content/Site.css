@@ -22,3 +22,7 @@ select,
 textarea {
     max-width: 280px;
 }
+
+tr td {
+    vertical-align: middle !important;
+}

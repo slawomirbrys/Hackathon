@@ -13,8 +13,16 @@ app.controller('productsController', ['$scope', '$location', 'productService', '
         $location.path('/shoppingCart');
     };
 
-    $scope.getTotal = function() {
-        return 123.45;
+    $scope.getTotal = function () {
+        return 123.45.toFixed(2);
+    }
+
+    $scope.getTotalLoan = function (interest) {
+        return ($scope.getTotal() * interest).toFixed(2);
+    }
+
+    $scope.getPaymentLoan = function (months, interest) {
+        return ($scope.getTotal() * interest / months).toFixed(2);
     }
 
 }]);

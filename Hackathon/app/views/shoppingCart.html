@@ -44,24 +44,32 @@
                 <tr>
                     <th class="h4">Loan</th>
                     <th class="h4">Period</th>
-                    <th class="h4">Total amount</th>
+                    <th class="h4 text-right">Monthly Payment</th>
+                    <th class="h4 text-right">Total amount</th>
+                    <th class="text-right"></th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>Short Loan</td>
                     <td>6 months</td>
-                    <td>$ {{ getTotal() * 1.1 }}</td>
+                    <td class="text-right">$ {{ getPaymentLoan(6, 1.1) }}</td>
+                    <td class="text-right">$ {{ getTotalLoan(1.1) }}</td>
+                    <td class="text-right"><a href="#" ng-click="alert('test')" class="btn btn-sm btn-success">Choose</a></td>
                 </tr>
                 <tr>
                     <td>Medium Loan</td>
                     <td>12 months</td>
-                    <td>$ {{ getTotal() * 1.2 }}</td>
+                    <td class="text-right">$ {{ getPaymentLoan(12, 1.2) }}</td>
+                    <td class="text-right">$ {{ getTotalLoan(1.2) }}</td>
+                    <td class="text-right"><a href="#" ng-click="alert('test')" class="btn btn-sm btn-success">Choose</a></td>
                 </tr>
                 <tr>
                     <td>Long Loan</td>
                     <td>18 months</td>
-                    <td>$ {{ getTotal() * 1.3 }}</td>
+                    <td class="text-right">$ {{ getPaymentLoan(18, 1.3) }}</td>
+                    <td class="text-right">$ {{ getTotalLoan(1.3) }}</td>
+                    <td class="text-right"><a href="#" ng-click="alert('test')" class="btn btn-sm btn-success">Choose</a></td>
                 </tr>
             </tbody>
         </table>
