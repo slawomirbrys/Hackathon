@@ -1,37 +1,37 @@
 ﻿[
   {
     "Id": 1,
-    "Title": "Laptop",
+    "Title": "Laptop 1",
     "Description": "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
     "Price": 123
   },
   {
     "Id": 2,
-    "Title": "2asdas",
+    "Title": "Laptop 2",
     "Description": "Lorem lley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
     "Price": 123
   },
     {
     "Id": 3,
-      "Title": "1asdas",
+      "Title": "Laptop 3",
     "Description": "Lorem Ipsum has been the industry's standard dummy text ever since theunchanged.",
     "Price": 123
   },
   {
     "Id": 4,
-    "Title": "2asdas",
+    "Title": "Smartphone 1",
     "Description": "Lorem scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
     "Price": 123
   },
     {
     "Id": 5,
-    "Title": "1asdas",
+    "Title": "Monitor 1",
     "Description": "asdasd asdasd asdsad",
     "Price": 123
   },
   {
     "Id": 6,
-    "Title": "2asdas",
+    "Title": "Monitor 2",
     "Description": "asdasd  asdasd asdsad",
     "Price": 123
   },  {

@@ -3,12 +3,12 @@
         &nbsp;
     </div>
     <div class="col-md-10">
-        <div data-ng-repeat="product in products" class="col-md-3" style="margin: 5px; border:1px solid rgba(128, 128, 128, 0.26)">
+        <div data-ng-repeat="product in products" class="col-md-3" style="margin: 5px; border:1px solid rgba(128, 128, 128, 0.26); padding-bottom: 10px">
             <br>
-            <span>
+            <span style="display:none">
                 {{ product.Id }}
             </span>
-            <span>{{ product.Title }}</span>
+            <span style="font-size:16pt">{{ product.Title }}</span>
             <img style="width: 100%" src="data/images/products/{{product.Id}}.jpg">
             <div style="white-space: nowrap;width: 20em;overflow: hidden;text-overflow: ellipsis;">{{ product.Description }}</div>
             <style>
