@@ -1,7 +1,18 @@
-﻿
+﻿@using Hackathon.Repository;
+@using Hackathon.Repository.BankWebModels;
+
 @{
     ViewBag.Title = "Bank Web";
 }
 
-<h2>Bank Web</h2>
+<h1>Bank Web</h1>
+<h2>Welcome to the Bank online transactional site.</h2>
 
+<a href="~/BankWeb/Login" class="btn btn-success">Login</a>
+
+@{
+    if (BankWebRepository.Instance.LoggedUser != null)
+    {
+        <a href="~/BankWeb/Logout" class="btn btn-success">Logout</a>
+    }
+}

@@ -1,0 +1,21 @@
+﻿@using Hackathon.Repository;
+@using Hackathon.Repository.BankWebModels;
+@{
+    ViewBag.Title = "Accounts";
+}
+
+<h1>Bank Web</h1>
+<p>
+    <a href="~/BankWeb/Personal" class="btn btn-default">Personal information</a>
+    <a href="~/BankWeb/Logout" class="btn btn-default">Logout</a>
+</p>
+
+<h2>Your accounts</h2>
+
+
+<div class="row">
+    @{ foreach (var acc in BankWebRepository.Instance.LoggedUser.Accounts)
+        {
+            <div>@acc.Nrb</div>
+        }}
+</div>
