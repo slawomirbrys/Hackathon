@@ -16,5 +16,6 @@ namespace Hackathon.Repository.Models.BankWeb
         public string Address2 { get; set; }
         public string City { get; set; }
         public List<Account> Accounts { get; set; }
+        public bool IsFigoAllowed { get; set; }
     }
 }

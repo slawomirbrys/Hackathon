@@ -39,6 +39,11 @@ namespace Hackathon.Controllers
 
             if (base.Request.QueryString.AllKeys.Contains("ssourl"))
             {
+                if (user.IsFigoAllowed)
+                {
+                    return RedirectToAction("Login");
+                }
+
                 string url = base.Request.QueryString["ssourl"];
                 url += "?token=" + Guid.NewGuid();
                 return Redirect(url);
@@ -74,5 +79,18 @@ namespace Hackathon.Controllers
             var user = BankWebRepository.Instance.LoggedUser;
             return View(user);
         }
+
+        public ActionResult FigoAllow()
+        {
+            BankWebRepository.Instance.LoggedUser.IsFigoAllowed = true;
+            return RedirectToAction("Personal");
+        }
+
+        public ActionResult FigoDisallow()
+        {
+            BankWebRepository.Instance.LoggedUser.IsFigoAllowed = false;
+            return RedirectToAction("Personal");
+        }
+
     }
 }

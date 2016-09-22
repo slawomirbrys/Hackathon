@@ -7,8 +7,8 @@ namespace Hackathon.Repository.Models.BankWeb
 {
     public class Transaction
     {
-        public string NrbFrom { get; set; }
-        public string NrbTo { get; set; }
+        public string IbanFrom { get; set; }
+        public string IbanTo { get; set; }
         public TransferType TransferType { get; set; }
         public string Date { get; set; }
         public string Title { get; set; }
