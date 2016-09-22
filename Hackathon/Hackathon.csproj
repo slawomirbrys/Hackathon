@@ -152,6 +152,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\BankWebRepository.cs" />
     <Compile Include="Repository\BankWebModels\User.cs" />
+    <Compile Include="Repository\FigoModels\BankModel.cs" />
+    <Compile Include="Repository\FigoModels\BankToken.cs" />
+    <Compile Include="Repository\FigoRepository.cs" />
+    <Compile Include="Repository\ShopRepository.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -196,6 +200,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\BankWeb\" />
+    <Folder Include="Repository\ShopModels\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
