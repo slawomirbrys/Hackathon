@@ -143,6 +143,7 @@
     <Compile Include="Controllers\BankMobile\BankMobileController.cs" />
     <Compile Include="Controllers\BankMobile\BankMobilePersonalController.cs" />
     <Compile Include="Controllers\BankWeb\BankWebController.cs" />
+    <Compile Include="Controllers\Figo\FigoApiController.cs" />
     <Compile Include="Controllers\Figo\FigoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\Shop\ShopController.cs" />
