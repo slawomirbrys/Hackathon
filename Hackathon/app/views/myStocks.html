@@ -1,0 +1,34 @@
+﻿<br />
+<div class="row">
+    <div class="col-md-2">
+        &nbsp;
+    </div>
+    <div class="col-md-8">
+        <table class="table table-striped table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Stock code</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-ng-repeat="stock in myStocks">
+                    <td>
+                        {{ stock.code }}
+                    </td>
+                    <td>
+                        {{ stock.price }}
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-sm btn-danger" ng-click="sellStock($index)">Sell</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="col-md-2">
+        &nbsp;
+    </div>
+</div>

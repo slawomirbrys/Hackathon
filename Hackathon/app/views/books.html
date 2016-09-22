@@ -1,0 +1,43 @@
+﻿<br />
+<div class="row">
+    <div class="col-md-2">
+        &nbsp;
+    </div>
+    <div class="col-md-8">
+        <table class="table table-striped table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Title</th>
+                    <th>Orginal Title</th>
+                    <th>View Count</th>
+                    <th>Favoiurit Count</th>
+                    <th>Votes Count</th>
+                    <th>Score</th>
+                    <th>Description</th>
+                    <th>Create Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-ng-repeat="book in books">
+                    <td>
+                        {{ book.Id }}
+                    </td>
+                    <td>{{ book.Title }}</td>
+                    <td>{{ book.TitleOrginal }}</td>
+                    <td>{{ book.ViewCount }}</td>
+                    <td>{{ book.FavouriteCount }}</td>
+                    <td>{{ book.VoteCount }}</td>
+                    <td>{{ book.Score }}</td>
+                    <td>{{ book.Description }}</td>
+                    <td>{{ book.CreateDate }}</td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="col-md-2">
+        &nbsp;
+    </div>
+</div>
