@@ -13,4 +13,8 @@ app.controller('productsController', ['$scope', '$location', 'productService', '
         $location.path('/shoppingCart');
     };
 
+    $scope.getTotal = function() {
+        return 123.45;
+    }
+
 }]);
