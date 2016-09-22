@@ -78,5 +78,21 @@
             @Html.DisplayFor(model => model.City)
         </dd>
 
+        <dt>
+            Figo integration allowed:
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IsFigoAllowed)
+
+            @if (Model.IsFigoAllowed)
+            {
+                <a href="~/BankWeb/FigoDisallow" class="btn btn-sm btn-danger">Disallow</a>
+            }
+            else
+            {
+                <a href="~/BankWeb/FigoAllow" class="btn btn-sm btn-success">Allow</a>
+            }
+
+        </dd>
     </dl>
 </div>

@@ -48,8 +48,8 @@ namespace Hackathon.Repository
                         {
                             new Transaction()
                             {
-                                NrbFrom = "PL371140926376031880416168827314",
-                                NrbTo = "PL471140976857058922014252714588",
+                                IbanFrom = "PL371140926376031880416168827314",
+                                IbanTo = "PL471140976857058922014252714588",
                                 Date = "2016-09-22",
                                 Title = "Invoice for my new phone",
                                 TransferType = TransferType.Outgoing,
@@ -57,8 +57,8 @@ namespace Hackathon.Repository
                             },
                             new Transaction()
                             {
-                                NrbFrom = "PL371140926376031880416168827314",
-                                NrbTo = "PL861140637662928947923726514464",
+                                IbanFrom = "PL371140926376031880416168827314",
+                                IbanTo = "PL861140637662928947923726514464",
                                 Date = "2016-09-14",
                                 Title = "Online shop payment",
                                 TransferType = TransferType.Outgoing,
@@ -66,8 +66,8 @@ namespace Hackathon.Repository
                             },
                             new Transaction()
                             {
-                                NrbFrom = "PL371140926376031880416168827314",
-                                NrbTo = "PL861140637662928947923726514464",
+                                IbanFrom = "PL371140926376031880416168827314",
+                                IbanTo = "PL861140637662928947923726514464",
                                 Date = "2016-09-13",
                                 Title = "Online shop payment",
                                 TransferType = TransferType.Outgoing,
@@ -75,8 +75,8 @@ namespace Hackathon.Repository
                             },
                             new Transaction()
                             {
-                                NrbFrom = "PL681140192224161184691122740935",
-                                NrbTo = "PL371140926376031880416168827314",
+                                IbanFrom = "PL681140192224161184691122740935",
+                                IbanTo = "PL371140926376031880416168827314",
                                 Date = "2016-09-10",
                                 Title = "Return for a dinner",
                                 TransferType = TransferType.Incoming,
@@ -93,8 +93,8 @@ namespace Hackathon.Repository
                         {
                             new Transaction()
                             {
-                                NrbFrom = "PL611140715583176442686061542445",
-                                NrbTo = "PL251140746167296292301159271465",
+                                IbanFrom = "PL611140715583176442686061542445",
+                                IbanTo = "PL251140746167296292301159271465",
                                 Date = "2016-09-10",
                                 Title = "Payroll for 2016-09",
                                 TransferType = TransferType.Incoming,
@@ -109,7 +109,8 @@ namespace Hackathon.Repository
                         Balance = 50000,
                         History = new List<Transaction>()
                     }
-                }
+                },
+                IsFigoAllowed = true
             });
             _users.Add(new User()
             {
@@ -122,6 +123,22 @@ namespace Hackathon.Repository
                 Address2 = "00-200",
                 City = "Warsaw",
                 Accounts = new List<Account>()
+                {
+                    new Account()
+                    {
+                        Nrb = "PL251140320317206830043429734258",
+                        Name = "Account 1",
+                        Balance = 7500,
+                        History = new List<Transaction>()
+                    },
+                    new Account()
+                    {
+                        Nrb = "PL871140608655584621946530675058",
+                        Name = "Account 2",
+                        Balance = 100,
+                        History = new List<Transaction>()
+                    }
+                }
             });
             _users.Add(new User()
             {
