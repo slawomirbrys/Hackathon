@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Hackathon.Repository.BankWebModels
+namespace Hackathon.Repository.Models.BankWeb
 {
     public class User
     {

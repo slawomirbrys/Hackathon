@@ -1,4 +1,4 @@
-﻿using Hackathon.Repository.BankWebModels;
+﻿using Hackathon.Repository.Models.BankWeb;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -36,7 +36,7 @@ namespace Hackathon.Repository
                 Address1 = "Coolest Street 21",
                 Address2 = "02-777",
                 City = "Warsaw",
-                Accounts = new List<BankWebModels.Account>()
+                Accounts = new List<Account>()
                 {
                     new Account()
                     {

@@ -150,11 +150,11 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repository\BankWebModels\Account.cs" />
-    <Compile Include="Repository\BankWebModels\Transaction.cs" />
-    <Compile Include="Repository\BankWebModels\TransferType.cs" />
+    <Compile Include="Repository\Models\BankWeb\Account.cs" />
+    <Compile Include="Repository\Models\BankWeb\Transaction.cs" />
+    <Compile Include="Repository\Models\BankWeb\TransferType.cs" />
     <Compile Include="Repository\BankWebRepository.cs" />
-    <Compile Include="Repository\BankWebModels\User.cs" />
+    <Compile Include="Repository\Models\BankWeb\User.cs" />
     <Compile Include="Repository\Models\Figo\BankModel.cs" />
     <Compile Include="Repository\Models\Figo\BankToken.cs" />
     <Compile Include="Repository\FigoRepository.cs" />
@@ -207,8 +207,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\BankWeb\" />
-    <Folder Include="Repository\Models\BankWeb\" />
     <Folder Include="Repository\Models\Shop\" />
   </ItemGroup>
   <ItemGroup>

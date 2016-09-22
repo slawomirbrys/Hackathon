@@ -1,4 +1,4 @@
-﻿namespace Hackathon.Repository.BankWebModels
+﻿namespace Hackathon.Repository.Models.BankWeb
 {
     public enum TransferType
     {
