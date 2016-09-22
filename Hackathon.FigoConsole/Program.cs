@@ -61,11 +61,18 @@ namespace Hackathon.FigoConsole
             WaitTask(taskAccounts);
             foreach (FigoAccount account in taskAccounts.Result)
             {
-                Console.WriteLine(account.Name);
+                Console.WriteLine("Account name: " +  account.Name);
+                Console.WriteLine("Account Bank ID: " + account.BankId);
+                Console.WriteLine("Account account Id: " + account.AccountId);
+                Console.WriteLine("Account account number: " + account.AccountNumber);
+                Console.WriteLine("Account bank name: " + account.BankName);
+                Console.WriteLine("Account currency " + account.IBAN);
 
                 var taskBalance = session.GetAccountBalance(account);
                 WaitTask(taskBalance);
-                Console.WriteLine(taskBalance.Result.Balance);
+                Console.WriteLine("Balance: " + taskBalance.Result.Balance);
+                Console.WriteLine("BalanceDate: " + taskBalance.Result.BalanceDate);
+                Console.WriteLine("CreditLine: " + taskBalance.Result.CreditLine);
             }
 
             // print out the list of all transactions on a specific account

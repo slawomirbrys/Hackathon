@@ -29,9 +29,9 @@ namespace Hackathon.Controllers.Figo
             return FigoRepository.GetFinancialOffers(bankToken, shopProduct);
         }
 
-        //// POST api/values
-        //public void Post([FromBody]string value)
-        //{
-        //}
+        public bool IsPossibleSelfPayment(BankToken bankToken, ShopProduct shopProduct)
+        {
+            return FigoRepository.IsPossibleSelfPayment(bankToken, shopProduct);
+        }
     }
 }

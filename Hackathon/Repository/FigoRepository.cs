@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using Hackathon.FigoApi.Providers;
 using Hackathon.Repository.FigoModels;
 using Hackathon.Repository.FinancialProductsModels;
 using Hackathon.Repository.Models.Figo;
@@ -51,6 +53,19 @@ namespace Hackathon.Repository
                 new LoanOffer() {BankId = 3, Currency = "EUR", CreditAmout = 1200, InterestRate = 1, PeriodFrom = DateTime.Now, PeriodTo = DateTime.Now.AddDays(365)},
                 new LoanOffer() {BankId = 4, Currency = "EUR", CreditAmout = 1200, InterestRate = 5, PeriodFrom = DateTime.Now, PeriodTo = DateTime.Now.AddDays(365)},
             };
+        }
+
+        public static bool IsPossibleSelfPayment(BankToken bankToken, ShopProduct product)
+        {
+            var figoAccountProvider = new FigoAccountProvider(new FigoSessionProvider());
+            var accounts = figoAccountProvider.GetAccounts();
+
+            if (accounts != null && accounts.Any())
+            {
+                return accounts.ToList().Exists(i => i.Balance.Balance >= (double) product.TotalValue);
+            }
+
+            return true;
         }
     }
 }
