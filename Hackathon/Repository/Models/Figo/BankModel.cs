@@ -8,7 +8,7 @@ namespace Hackathon.Repository.FigoModels
     public class BankModel
     {
         public string BankName { get; set; }
-        public string BankId { get; set; }
+        public int BankId { get; set; }
         //TG - ToDo!
         public string Token { get; set; } 
     }

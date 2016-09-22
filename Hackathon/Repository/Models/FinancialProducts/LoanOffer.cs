@@ -13,5 +13,6 @@ namespace Hackathon.Repository.FinancialProductsModels
         public DateTime PeriodTo { get; set; }
         public decimal InterestRate { get; set; }
         public decimal TotalCostOfCredit { get; set; }
+        public string Currency { get; set; }
     }
 }
