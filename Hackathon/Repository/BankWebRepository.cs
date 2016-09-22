@@ -1,4 +1,4 @@
-﻿using Hackathon.Repository.Models;
+﻿using Hackathon.Repository.BankWebModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
