@@ -1,0 +1,28 @@
+﻿<md-dialog aria-label="Order confirmation">
+    <form ng-cloak>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>Order confirmation</h2>
+                <span flex></span>
+                <md-button class="md-icon-button" ng-click="cancel()">
+                    <md-icon md-svg-src="img/icons/ic_close_24px.svg" aria-label="Close dialog"></md-icon>
+                </md-button>
+            </div>
+        </md-toolbar>
+
+        <md-dialog-content>
+            <div class="md-dialog-content">
+                <!--<h2>Using .md-dialog-content class that sets the padding as the spec</h2>-->
+                <p>
+                    Your purchase is confirmed. Thank You for your purchase!
+                </p>
+            </div>
+        </md-dialog-content>
+
+        <md-dialog-actions layout="row">
+            <md-button ng-click="answer('useful')">
+                Ok
+            </md-button>
+        </md-dialog-actions>
+    </form>
+</md-dialog>

@@ -3,29 +3,9 @@ var app = angular.module('SimpleStackApp', ['ngRoute', 'LocalStorageModule', 'ng
 
 app.config(function ($routeProvider) {
 
-    $routeProvider.when("/home", {
-        controller: "homeController",
-        templateUrl: "/app/views/home.html"
-    });
-
     $routeProvider.when("/login", {
         controller: "loginController",
         templateUrl: "/app/views/login.html"
-    });
-
-    $routeProvider.when("/signup", {
-        controller: "signupController",
-        templateUrl: "/app/views/signup.html"
-    });
-
-    $routeProvider.when("/myStocks", {
-        controller: "myStocksController",
-        templateUrl: "/app/views/myStocks.html"
-    });
-
-    $routeProvider.when("/stocks", {
-        controller: "stocksController",
-        templateUrl: "/app/views/stocks.html"
     });
 
     $routeProvider.when("/products", {
@@ -48,7 +28,6 @@ app.config(function ($routeProvider) {
         templateUrl: "/app/views/shoppingCart.html"
     });
     
-
     $routeProvider.otherwise({ redirectTo: "/products" });
 
 });

@@ -167,6 +167,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app\modals\shoppingCartModal.html" />
+    <Content Include="app\modals\shoppingCartModal.tmpl.html" />
     <Content Include="app\views\shoppingCart.html" />
     <Content Include="Content\basket.png" />
     <Content Include="Content\bootstrap.css" />
