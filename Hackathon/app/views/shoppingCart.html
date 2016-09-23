@@ -51,17 +51,17 @@
                     <th class="h5">Period</th>
                     <th class="h5 text-right">Loan amount</th>
                     <th class="h5 text-right">Monthly payment</th>
-                    <th class="h5 text-right">Total amount</th>
+                    <th class="h5 text-right">Total cost</th>
                     <th class="text-right"></th>
                 </tr>
             </thead>
             <tbody>
-                <tr class="h4" title="You don't have enough balance on your account" data-toggle="tooltip" data-placement="top" onmouseenter="$(this).tooltip('show')">
+                <tr class="h4">
                     <td><img src="../../Content/mbank-logo.png" width="100" /></td>
                     <td>Direct Transfer</td>
-                    <td></td>
-                    <td></td>
-                    <td class="text-right"></td>
+                    <td colspan="3" class="text-center h5" style="color: red; font-weight: 400">You don't have enough balance on your account</td>
+                    <!--<td></td>
+                    <td class="text-right"></td>-->
                     <td class="text-right">{{ getTotal() }} €</td>
                     <td class="text-right"><a href="#" ng-click="alert('test')" class="btn btn-sm btn-success disabled">Choose</a></td>
                 </tr>
