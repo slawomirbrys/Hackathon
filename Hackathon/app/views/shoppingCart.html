@@ -15,7 +15,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr class="h4">
                     <td>
                         <img src="../../data/images/products/{{ products[0].Id }}.jpg" width="150px" />
                     </td>
@@ -49,7 +49,7 @@
                     <th class="h5" width="120">Bank</th>
                     <th class="h5" width="200">Payment method</th>
                     <th class="h5">Period</th>
-                    <th class="h5">Loan amount</th>
+                    <th class="h5 text-right">Loan amount</th>
                     <th class="h5 text-right">Monthly payment</th>
                     <th class="h5 text-right">Total amount</th>
                     <th class="text-right"></th>
@@ -69,25 +69,25 @@
                     <td><img src="../../Content/mbank-logo.png" width="100" /></td>
                     <td>Short Loan</td>
                     <td>6 months</td>
-                    <td>$ {{ slider.value }}</td>
+                    <td class="text-right">$ {{ slider.value }}</td>
                     <td class="text-right">$ {{ getPaymentLoan(6, 1.1) }}</td>
                     <td class="text-right">$ {{ getTotalLoan(1.1) }}</td>
                     <td class="text-right"><a href="#" ng-click="alert('test')" class="btn btn-sm btn-success">Choose</a></td>
                 </tr>
                 <tr class="h4">
                     <td><img src="../../Content/mbank-logo.png" width="100" /></td>
-                    <td>Medium</td>
+                    <td>Medium Loan</td>
                     <td>12 months</td>
-                    <td>$ {{ slider.value }}</td>
+                    <td class="text-right">$ {{ slider.value }}</td>
                     <td class="text-right">$ {{ getPaymentLoan(12, 1.2) }}</td>
                     <td class="text-right">$ {{ getTotalLoan(1.2) }}</td>
                     <td class="text-right"><a href="#" ng-click="alert('test')" class="btn btn-sm btn-success">Choose</a></td>
                 </tr>
                 <tr class="h4">
                     <td><img src="../../Content/mbank-logo.png" width="100" /></td>
-                    <td>Long</td>
+                    <td>Long Loan</td>
                     <td>18 months</td>
-                    <td>$ {{ slider.value }}</td>
+                    <td class="text-right">$ {{ slider.value }}</td>
                     <td class="text-right">$ {{ getPaymentLoan(18, 1.3) }}</td>
                     <td class="text-right">$ {{ getTotalLoan(1.3) }}</td>
                     <td class="text-right"><a href="#" ng-click="alert('test')" class="btn btn-sm btn-success">Choose</a></td>
