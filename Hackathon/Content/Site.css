@@ -1,4 +1,5 @@
-﻿body {
+﻿
+body {
     /*padding-top: 50px;*/
     padding-bottom: 20px;
 }
@@ -29,4 +30,28 @@ tr td {
 
 .tooltip-inner {
     font-size: 14pt;
+}
+
+.bankbox {
+    height: 100px;
+    width: 130px;
+    margin: 10px; 
+    //border: 1px solid rgba(128, 128, 128, 0.29);
+    //background-color: red;
+    display: block;
+    vertical-align: middle;
+}
+
+.bankbox > div {
+    position: absolute;
+    top: 50%;
+    height: 50%;
+    margin-top: -25%;
+    text-align: center;
+}
+
+.bankbox > div > img {
+    //margin-top: 10px; 
+    //margin-left:auto; 
+    width: 150px;
 }
