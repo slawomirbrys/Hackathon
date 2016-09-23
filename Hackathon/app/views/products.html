@@ -10,7 +10,7 @@
             </span>
             <span style="font-size:16pt">{{ product.Title }}</span>
             <img style="width: 100%" src="data/images/products/{{product.Id}}.jpg">
-            <div style="white-space: nowrap;width: 20em;overflow: hidden;text-overflow: ellipsis;">{{ product.Description }}</div>
+            <div style="white-space: nowrap;width: 20em;overflow: hidden;text-overflow: ellipsis;"></div>
             <style>
                 .price {
                     margin: 1px auto;
@@ -18,10 +18,12 @@
                 }
             </style>
 
-            <div class="price">Price: ${{ product.Price }} <button type="button" class="btn btn-sm btn-success" ng-click="buyStock($index)">Buy</button></div>
+            <div class="price">Price: {{ getRandomArbitrary(200, 700) }} €<button type="button" class="btn btn-sm btn-success" ng-click="buyStock($index)">Buy</button></div>
         </div>
     </div>
     <div class="col-md-2">
         &nbsp;
     </div>
+
 </div>
+

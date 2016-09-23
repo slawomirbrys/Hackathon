@@ -29,4 +29,8 @@ app.controller('productsController', ['$scope', '$location', 'productService', '
         return ($scope.slider.value * interest / months).toFixed(2);
     }
 
+    $scope.getRandomArbitrary = function (min, max) {
+        return (Math.random() * (max - min) + min).toFixed(2);
+    }
+
 }]);
