@@ -1,5 +1,5 @@
 ﻿
-var app = angular.module('SimpleStackApp', ['ngRoute', 'LocalStorageModule', 'ngMaterial']);
+var app = angular.module('SimpleStackApp', ['ngRoute', 'LocalStorageModule', 'ngMaterial', 'angularModalService' ]);
 
 app.config(function ($routeProvider) {
 
@@ -63,6 +63,8 @@ app.config(function ($httpProvider) {
     $httpProvider.interceptors.push('authInterceptorService');
 });
 
+
 app.run(['authService', function (authService) {
     authService.fillAuthData();
 }]);
+

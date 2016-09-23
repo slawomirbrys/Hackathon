@@ -166,6 +166,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\modals\shoppingCartModal.html" />
     <Content Include="app\views\shoppingCart.html" />
     <Content Include="Content\basket.png" />
     <Content Include="Content\bootstrap.css" />
@@ -206,6 +207,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\angular-local-storage.min.js" />
+    <Content Include="Scripts\angular-modal-service.min.js" />
     <Content Include="Scripts\authComplete.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
