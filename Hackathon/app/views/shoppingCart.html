@@ -65,7 +65,7 @@
                     <td class="text-right">{{ getTotal() }} €</td>
                     <td class="text-right"><a href="#" ng-click="alert('test')" class="btn btn-sm btn-success disabled">Choose</a></td>
                 </tr>
-                <tr id="2" class="h4" onclick="selectRow(2);">
+                <tr id="2" class="h4" ng-click="selectRow(2)">
                     <td><img src="../../Content/mbank-logo.png" width="100" /></td>
                     <td>Short Loan</td>
                     <td>6 months</td>
@@ -74,7 +74,7 @@
                     <td class="text-right">{{ getTotalLoan(1.1) }} €</td>
                     <td class="text-right"><a href="#" onclick="return false;" class="btn btn-sm btn-success">Choose</a></td>
                 </tr>
-                <tr id="3" class="h4" onclick="selectRow(3);">
+                <tr id="3" class="h4" ng-click="selectRow(3)">
                     <td><img src="../../Content/mbank-logo.png" width="100" /></td>
                     <td>Medium Loan</td>
                     <td>12 months</td>
@@ -83,7 +83,7 @@
                     <td class="text-right">{{ getTotalLoan(1.2) }} €</td>
                     <td class="text-right"><a href="#" onclick="return false;" class="btn btn-sm btn-success">Choose</a></td>
                 </tr>
-                <tr id="4" class="h4" onclick="selectRow(4);">
+                <tr id="4" class="h4" ng-click="selectRow(4)">
                     <td><img src="../../Content/mbank-logo.png" width="100" /></td>
                     <td>Long Loan</td>
                     <td>18 months</td>
@@ -95,16 +95,6 @@
             </tbody>
         </table>
     </div>
-
-    <script>
-        function selectRow(row) {
-            for(i=1; i<=4; i++){
-                $('#' + i).removeClass('selected');
-            }
-
-            $('#' + row).addClass('selected');
-        }
-    </script>
 
     <div class="col-md-offset-2 col-md-8">
         <!--<md-slider-container>-->

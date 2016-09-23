@@ -52,6 +52,15 @@ app.controller('productsController', ['$scope', '$location', 'productService', '
         });
     };
 
+    $scope.selectRow = function (row) {
+        var i;
+        for (i = 1; i <= 4; i++) {
+            jQuery('#' + i).removeClass('selected');
+        }
+
+        jQuery('#' + row).addClass('selected');
+    }
+
     function DialogController($scope, $mdDialog) {
         $scope.hide = function() {
             $mdDialog.hide();
