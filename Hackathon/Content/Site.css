@@ -55,3 +55,7 @@ tr td {
     //margin-left:auto; 
     width: 150px;
 }
+
+.price > img {
+    cursor: pointer;
+}
