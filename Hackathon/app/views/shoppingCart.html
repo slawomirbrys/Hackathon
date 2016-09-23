@@ -95,15 +95,24 @@
             </tbody>
         </table>
     </div>
+
     <div class="col-md-offset-2 col-md-8">
-        <md-slider-container>
-            <span>Amount</span>
+        <!--<md-slider-container>-->
+        <div class="col-md-1">Direct Transfer Amount</div>
+
+        <div class="col-md-10">
             <md-slider flex min="0" max="{{ getTotal() }}" ng-model="slider.value" aria-label="red" id="red-slider">
             </md-slider>
-            <!--<md-input-container>
-                <input flex type="number" ng-model="slider.value" aria-label="red" aria-controls="red-slider" />
-            </md-input-container>-->
-        </md-slider-container>
+        </div>
+
+        <div class="col-md-1">
+            Loan Amount
+        </div>
+
+        <!--<md-input-container>
+            <input flex type="number" ng-model="slider.value" aria-label="red" aria-controls="red-slider" />
+        </md-input-container>-->
+        <!--</md-slider-container>-->
     </div>
     
     <div class="col-md-offset-2 col-md-8 h2">
