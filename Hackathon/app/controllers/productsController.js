@@ -5,7 +5,7 @@ app.controller('productsController', ['$scope', '$location', 'productService', '
     $scope.message = "";
 
     $scope.slider = {
-        value: 123
+        value: 1210
     };
 
     productService.getProducts().then(function (results) {
@@ -19,7 +19,7 @@ app.controller('productsController', ['$scope', '$location', 'productService', '
     };
 
     $scope.getTotal = function () {
-        return 123.00.toFixed(2);
+        return 1210.00.toFixed(2);
     }
 
     $scope.getTotalLoan = function (interest) {
