@@ -14,11 +14,14 @@
             <style>
                 .price {
                     margin: 1px auto;
-                    text-align:center
+                    text-align: center;
                 }
             </style>
 
-            <div class="price">Price: {{ getRandomArbitrary(200, 700) }} €<button type="button" class="btn btn-sm btn-success" ng-click="buyStock($index)">Buy</button></div>
+            <div class="price">
+                Price: {{ getRandomArbitrary(200, 700) }} €
+                <img src="/content/basket.png" width="50px" ng-click="buyStock($index)"/>
+            </div>
         </div>
     </div>
     <div class="col-md-2">
@@ -26,4 +29,3 @@
     </div>
 
 </div>
-
