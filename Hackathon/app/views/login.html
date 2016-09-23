@@ -1,5 +1,10 @@
 ﻿<form class="form-login" role="form">
-    <h2 class="form-login-heading">Login</h2>
+    
+    <br><br>
+    <button class="btn btn-lg btn-success btn-block" data-ng-click="loginAsBank()">Login as your Bank</button>
+    <h5 class="form-login-heading text-right">Powered by <img src="../../Content/figo_logo.png" width="30" hight="40" /></h5>
+    <br>
+    <h4 class="form-login-heading">Shop login</h4>
 
     <input type="text" class="form-control" placeholder="Username" data-ng-model="loginData.userName" required autofocus>
     <input type="password" class="form-control" placeholder="Password" data-ng-model="loginData.password" required>
@@ -7,6 +12,5 @@
     <div data-ng-hide="message == ''" class="alert alert-danger">
         {{message}}
     </div>
-    <br>
-    <button class="btn btn-md btn-success btn-block" data-ng-click="loginAsBank()">Login as Bank</button>
+
 </form>
