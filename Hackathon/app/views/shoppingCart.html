@@ -100,7 +100,7 @@
         <!--<md-slider-container>-->
         <div class="col-md-2 text-center">
             Direct Transfer<br />
-            $ {{ getTotal() - slider.value }}
+            {{ getTotal() - slider.value }} €
         </div>
 
         <div class="col-md-8">
@@ -110,13 +110,8 @@
 
         <div class="col-md-2 text-center">
             Loan Amount<br/>
-            $ {{ slider.value }}
+            {{ slider.value }} €
         </div>
-
-        <!--<md-input-container>
-            <input flex type="number" ng-model="slider.value" aria-label="red" aria-controls="red-slider" />
-        </md-input-container>-->
-        <!--</md-slider-container>-->
     </div>
 
     <br />
