@@ -57,5 +57,18 @@ tr td {
 }
 
 .price > img {
-    cursor: pointer;    
+    cursor: pointer;
+}
+
+tr.selected {
+    font-weight: 800;
+    background-color: #c4f5c4;
+}
+
+.table-hover>tbody>tr.selected:hover>td {
+    background-color: #93e093 !important;
+}
+
+.tableoffers > tbody > tr {
+    cursor: pointer;
 }
