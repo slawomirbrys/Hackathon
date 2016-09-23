@@ -3,16 +3,8 @@ app.controller('productsController', ['$scope', '$location', 'productService', '
 
     $scope.products = [];
 
-    $scope.minSlider = {
-        value: 10
-    };
-
-    //Slider with selection bar
-    $scope.slider_visible_bar = {
-        value: 10,
-        options: {
-            showSelectionBar: true
-        }
+    $scope.slider = {
+        value: 123
     };
 
     productService.getProducts().then(function (results) {
@@ -26,7 +18,7 @@ app.controller('productsController', ['$scope', '$location', 'productService', '
     };
 
     $scope.getTotal = function () {
-        return 123.45.toFixed(2);
+        return 123.00.toFixed(2);
     }
 
     $scope.getTotalLoan = function (interest) {
@@ -34,7 +26,7 @@ app.controller('productsController', ['$scope', '$location', 'productService', '
     }
 
     $scope.getPaymentLoan = function (months, interest) {
-        return ($scope.getTotal() * interest / months).toFixed(2);
+        return ($scope.slider.value * interest / months).toFixed(2);
     }
 
 }]);

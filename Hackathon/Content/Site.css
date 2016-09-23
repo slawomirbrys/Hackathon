@@ -26,3 +26,7 @@ textarea {
 tr td {
     vertical-align: middle !important;
 }
+
+.tooltip-inner {
+    font-size: 14pt;
+}
