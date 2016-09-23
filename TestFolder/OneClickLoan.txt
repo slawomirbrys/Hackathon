@@ -1,19 +1,18 @@
 - Kto za to zap³aci?
-- Usun¹æ szczegó³y odnoœnie rachunków klienta.
 - Monetyzacja.
-
 
 Napisaæ w punktach co nale¿y powiedzieæ:
 15-20 punktów.
 
-One click loan :D
-
-1. I would like to buy the product.
-(open shop page)
+0. I would like to show you innovative solution on German  market.
+1. This is the single sign on.
+2. I would like to buy the product.
+   (Open shop page)
 2. I would like to have one login to all shops.
-(log in page)
-3. I have a login. Its login to my bank.
-(log in as bank)
+   (Open Log in page)
+3. I just have a login. Its login to my bank.
+   (Log in as bank)
+   
 4. I would like to use it. It only login i need to remember.
 (bank login)
 5. I would like to log in to my shop. By my bank login.
