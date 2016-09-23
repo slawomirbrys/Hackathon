@@ -104,7 +104,13 @@
         </div>
 
         <div class="col-md-8">
-            <md-slider flex min="{{ (getTotal() * 0.25).toFixed(0) }}" max="{{ getTotal() }}" ng-model="slider.value" aria-label="red" id="red-slider">
+            <md-slider flex 
+                       min="{{ (getTotal() * 0.25).toFixed(0) }}" 
+                       max="{{ getTotal() }}" 
+                       step="50"
+                       ng-model="slider.value" 
+                       aria-label="red" 
+                       id="red-slider">
             </md-slider>
         </div>
 
