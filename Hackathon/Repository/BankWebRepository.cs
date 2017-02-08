@@ -137,7 +137,8 @@ namespace Hackathon.Repository
                         Balance = 100,
                         History = new List<Transaction>()
                     }
-                }
+                },
+                IsFigoAllowed = true
             });
             _users.Add(new User()
             {
